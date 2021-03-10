@@ -92,7 +92,7 @@ body {
     height: 450px;
     background-color: #f1f1f1;
     box-shadow: 0 0 5px grey;
-    border-radius: 12px;
+    
 }
 
 .advantage-list-item-heading {
@@ -116,6 +116,7 @@ body {
 }
 
 .footer-container {
+    margin-top: 50px;
     margin-bottom: 150px;
 }
 
