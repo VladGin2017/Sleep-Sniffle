@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'source_sans';
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +30,7 @@ img {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'source_sans', sans-serif;
     background-color: white;
 }
 
@@ -90,9 +101,9 @@ body {
 .advantage-list-item {
     width: 300px;
     height: 450px;
-    background-color: #f1f1f1;
+    
     box-shadow: 0 0 5px grey;
-    border-radius: 12px;
+    
 }
 
 .advantage-list-item-heading {
@@ -116,6 +127,7 @@ body {
 }
 
 .footer-container {
+    margin-top: 50px;
     margin-bottom: 150px;
 }
 
@@ -182,4 +194,35 @@ body {
     background-image: url(../svg/inst-icon.svg);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.product-menu-container {
+    margin-top: 50px;
+}
+
+.product-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-menu-list-item {
+    width: 300px;
+    height: 450px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px grey;
+    text-align: center;
+}
+
+.product-menu-list-item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.product-menu-list-item-heading {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.price {
+    color: grey;
 }
