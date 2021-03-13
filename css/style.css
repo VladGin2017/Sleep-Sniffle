@@ -70,7 +70,6 @@ body {
 .main-photo-container {
     width: 100%;
     height: 450px;
-    background-color: #e5e5e5;
     background-image: url(../img/logo_.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,13 +100,13 @@ body {
 .advantage-list-item {
     width: 300px;
     height: 450px;
-    
-    box-shadow: 0 0 5px grey;
-    
+    box-shadow: 0 0 5px #a2a2a2;
+    border-radius: 12px;
 }
 
+
 .advantage-list-item-heading {
-    margin-top: 45px;
+    margin-top: 270px;
     text-align: center;
 }
 
@@ -126,9 +125,60 @@ body {
     margin-left: 0px;
 }
 
+.plate_1 {
+    background-image: url(../img/plate_1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 300px 225px;
+}
+
+.plate_2 {
+    background-image: url(../img/plate_2.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 300px 225px;
+}
+
+.plate_3 {
+    background-image: url(../img/plate_3.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 300px 225px;
+}
+
+.plate_4 {
+    background-image: url(../img/plate_4.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 300px 225px;
+}
+
+.plate_5 {
+    background-image: url(../img/plate_5.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 300px 225px;
+}
+
+.plate_6 {
+    background-image: url(../img/plate_6.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 300px 225px;
+}
+
 .footer-container {
+    width: 100%;
+    height: 250px;
+    background-color:#010805;
     margin-top: 50px;
-    margin-bottom: 150px;
+}
+
+.footer-menu {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
 }
 
 .footer-menu-list {
@@ -145,22 +195,25 @@ body {
 }
 
 .contact {
+    text-align: left;
+}
+
+.social {
     margin-left: auto;
-    text-align: right;
 }
 
 .footer-menu-list-item-heading {
     margin-bottom: 15px;
     font-size: 20px;
-    color: #cc9933;
+    color: #ffffff;
 }
 
 .footer-submenu-list-item-link {
-    color: grey;
+    color: #ffffff;
 }
 
 .number {
-    color: lightskyblue;
+    color: #ffffff;
     background-image: url(../svg/phone-icon.svg);
     background-size: 18px;
     background-repeat: no-repeat;
@@ -168,7 +221,7 @@ body {
 }
 
 .e-mail {
-    color: lightskyblue;
+    color: #ffffff;
     background-image: url(../svg/e-mail-icon.svg);
     background-size: 18px;
     background-repeat: no-repeat;
@@ -225,4 +278,21 @@ body {
 
 .price {
     color: grey;
+}
+
+/* contacts.html */
+
+.contacts {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    display: flex;
+}
+
+.social-info-container {
+    margin-right: auto;
+}
+
+.contacts-info {
+    margin-left: auto;
 }
