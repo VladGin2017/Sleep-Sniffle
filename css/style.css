@@ -101,7 +101,7 @@ body {
 .advantage-list-item {
     width: 300px;
     height: 450px;
-    background-color: #f1f1f1;
+    
     box-shadow: 0 0 5px grey;
     
 }
@@ -194,4 +194,35 @@ body {
     background-image: url(../svg/inst-icon.svg);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.product-menu-container {
+    margin-top: 50px;
+}
+
+.product-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-menu-list-item {
+    width: 300px;
+    height: 450px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px grey;
+    text-align: center;
+}
+
+.product-menu-list-item:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.product-menu-list-item-heading {
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.price {
+    color: grey;
 }
