@@ -29,7 +29,13 @@ img {
     max-width: 100%;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'source_sans', sans-serif;
     background-color: white;
 }
@@ -39,6 +45,8 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
+/* Menu */
 
 .header-container-menu-list {    
     display: flex;
@@ -67,6 +75,8 @@ body {
     background-size: contain;
 }
 
+/* Logo */
+
 .main-photo-container {
     width: 100%;
     height: 450px;
@@ -75,6 +85,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* About products */
 
 .about-products-container {
     margin-top: 50px;
@@ -90,6 +102,8 @@ body {
     line-height: 1.5;
 }
 
+/* Advantage */
+
 .advantage-list {
     display: flex;
     flex-wrap: wrap;
@@ -104,6 +118,23 @@ body {
     border-radius: 12px;
 }
 
+.btn-advantage-list-item {
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -175px;
+    display: block;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding-top: 14px;
+    padding-left: 5px;
+    visibility: hidden;
+}
+
+.advantage-list-item:hover .btn-advantage-list-item {
+    visibility: visible;
+}
 
 .advantage-list-item-heading {
     margin-top: 270px;
@@ -111,7 +142,6 @@ body {
 }
 
 .advantage-description {
-    margin-top: 15px;
     line-height: 1.5;
     text-align: center;
 }
@@ -167,11 +197,65 @@ body {
     background-size: 300px 225px;
 }
 
+/* Popular items */
+
+.popular-item-container {
+    width: 100%;
+    background-color: #a2a2a2;
+    margin-bottom: 50px;
+}
+
+.popular-item-heading {
+    margin-left: 50%;
+    padding-top: 15px;
+    
+}
+
+.popular-item-price {
+    margin-left: 50%;
+    
+}
+
+.popular-item-description {
+    margin-left: 50%;
+    padding-top: 15px;
+    width: 500px;
+}
+
+.popular-item-complectation-list {
+    margin-left: 50%;
+    padding-top: 15px;
+    padding-left: 17px;
+    list-style: outside;
+}
+
+.popular-item-character-list {
+    margin-left: 50%;
+    padding-top: 15px;
+    padding-left: 17px;
+    list-style: outside;
+}
+
+.btn-popular-item {
+    width: 250px;
+    height: 55px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: 1px solid black;
+
+}
+
+/* Footer */
+
+.footer {
+    flex-shrink: 0;
+}
+
 .footer-container {
     width: 100%;
     height: 250px;
     background-color:#010805;
-    margin-top: 50px;
 }
 
 .footer-menu {
@@ -283,16 +367,36 @@ body {
 /* contacts.html */
 
 .contacts {
+    
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1 0 auto;
 }
 
 .social-info-container {
-    margin-right: auto;
+    margin-right: 300px;
 }
 
-.contacts-info {
-    margin-left: auto;
+.social-info-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-info-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-list-heading {
+    margin: 0;
+    padding-bottom: 15px;
 }
