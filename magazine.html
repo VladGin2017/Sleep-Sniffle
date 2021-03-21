@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/menu-slider.js"></script>
     <title>Магазин</title>
 
 </head>
@@ -14,9 +16,9 @@
         <div class="container header-container">
             <nav class="header-container-menu">
                 <ul class="header-container-menu-list">
-                    <li class="header-container-menu-list-item">
-                        <a href="index.html" class="header-container-menu-list-item-link">Главная</a>
-                    </li>
+                	<li class="header-container-menu-list-item">
+                	    <a href="index.html" class="header-container-menu-list-item-link">Главная</a>
+                	</li>
                     <li class="header-container-menu-list-item">
                         <a href="magazine.html" class="header-container-menu-list-item-link">Магазин</a>
                     </li>
@@ -24,10 +26,22 @@
                         <a href="dostavka.html" class="header-container-menu-list-item-link">Доставка</a>
                     </li>
                     <li class="header-container-menu-list-item">
-                        <a href="#" class="header-container-menu-list-item-link">Контакты</a>
+                        <a href="contacts.html" class="header-container-menu-list-item-link">Контакты</a>
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div class="menu-mobile">
+            <a class="menu-mobile-triger" href="#"></a>
+            <div class="menu-mobile-popup">
+                <a class="menu-mobile-close" href="#"></a>
+                <ul class="menu-mobile__list">
+                    <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__item__link">Главная</a></li>
+                    <li class="mobile-menu__item"><a href="magazine.html" class="mobile-menu__item__link">Магазин</a></li>		
+                    <li class="mobile-menu__item"><a href="dostavka.html" class="mobile-menu__item__link">Доставка</a></li>
+                    <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__item__link">Контакты</a></li>
+                </ul>						
+            </div>
         </div>
     </header>
 
@@ -35,28 +49,91 @@
         <div class="container product-menu-container">
             <ul class="product-menu-list">
                 <li class="product-menu-list-item">
-                    <img src="img/plate_1.jpg" alt="раздел1" class="product-menu-list-item-img">
+                    <img src="img/plate_2.png" alt="раздел1" class="product-menu-list-item-img">
                     <h2 class="product-menu-list-item-heading">Ройкроу</h2>
                     <p class="price">Цена: 6190 руб.</p>
+                    <a href="" class="btn btn-product">Подробнее</a>
                 </li>
                 <li class="product-menu-list-item">
-                    <img src="img/plate_1.jpg" alt="раздел1" class="product-menu-list-item-img">
+                    <img src="img/plate_6.png" alt="раздел1" class="product-menu-list-item-img">
                     <h2 class="product-menu-list-item-heading">Дюфлеон</h2>
                     <p class="price">Цена: 6390 руб.</p>
+                    <a href="" class="btn btn-product">Подробнее</a>
                 </li>
                 <li class="product-menu-list-item">
-                    <img src="img/plate_1.jpg" alt="раздел1" class="product-menu-list-item-img">
+                    <img src="img/plate_1.png" alt="раздел1" class="product-menu-list-item-img">
                     <h2 class="product-menu-list-item-heading">Грегменд</h2>
                     <p class="price">Цена: 6890 руб.</p>
+                    <a href="" class="btn btn-product">Подробнее</a>
                 </li>
                 <li class="product-menu-list-item">
-                    <img src="img/plate_1.jpg" alt="раздел1" class="product-menu-list-item-img">
+                    <img src="img/plate_5.png" alt="раздел1" class="product-menu-list-item-img">
                     <h2 class="product-menu-list-item-heading">Подушка</h2>
                     <p class="price">Цена: 990 руб.</p>
+                    <a href="" class="btn btn-product">Подробнее</a>
                 </li>
             </ul>
         </div>
     </section>
-    
+    <footer class="footer">
+        <div class="footer-container">
+            <nav class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li class="footer-menu-list-item info">
+                        <h2 class="footer-menu-list-item-heading">Информация</h2>
+                        <ul class="footer-submenu-list">
+                            <li class="footer-submenu-list-item">
+                                <a href="#" class="footer-submenu-list-item-link">Главная</a>
+                            </li>
+                            <li class="footer-submenu-list-item">
+                                <a href="#" class="footer-submenu-list-item-link">Магазин</a>
+                            </li>
+                            <li class="footer-submenu-list-item">
+                                <a href="#" class="footer-submenu-list-item-link">Доставка</a>
+                            </li>
+                            <li class="footer-submenu-list-item">
+                                <a href="#" class="footer-submenu-list-item-link">Контакты</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer-menu-list-item contact">
+                        <h2 class="footer-menu-list-item-heading">Связь</h2>
+                        <a href="tel:+74999999999" class="number">+7 499 999 99 99</a> <br />
+                        <a href="mailto:example@mail.com" class="e-mail">example@mail.com</a>
+                    </li>
+                    <li class="footer-menu-list-item social">
+                        <h2 class="footer-menu-list-item-heading">Социальные сети</h2>
+                        <ul class="social-menu-list">
+                            <li class="social-menu-list-item vk-social"></li>
+                            <li class="social-menu-list-item inst-social"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-container-for-320px">
+            <nav class="footer-menu-for-320px">
+                <ul class="footer-list-for-320px">
+                    <li class="footer-menu-for-320px__social"><a href="#" class="footer-menu-for-320px__vk"></a></li>
+                    <li class="footer-menu-for-320px__social"><a href="#" class="footer-menu-for-320px__inst"></a></li>
+                </ul>
+                <a href="tel:+74999999999" class="number_for-320px">+7 499 999 99 99</a>
+                <ul class="footer-submenu-for-320px">
+                    <li class="footer-submenu-list-item">
+                        <a href="#" class="footer-submenu-list-item-link">Главная</a>
+                    </li>
+                    <li class="footer-submenu-list-item">
+                        <a href="#" class="footer-submenu-list-item-link">Магазин</a>
+                    </li>
+                    <li class="footer-submenu-list-item">
+                        <a href="#" class="footer-submenu-list-item-link">Доставка</a>
+                    </li>
+                    <li class="footer-submenu-list-item">
+                        <a href="#" class="footer-submenu-list-item-link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div> 
+    </footer>
 </body>
 </html>
