@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/sourcesanspro-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/menu-slider.js"></script>
+    <script src="js/slider.js"></script>
     <title>Спит и сопит</title>
 </head>
 <body>
@@ -29,6 +32,18 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+        <div class="menu-mobile">
+            <a class="menu-mobile-triger" href="#"></a>
+            <div class="menu-mobile-popup">
+                <a class="menu-mobile-close" href="#"></a>
+                <ul class="menu-mobile__list">
+                    <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__item__link">Главная</a></li>
+                    <li class="mobile-menu__item"><a href="magazine.html" class="mobile-menu__item__link">Магазин</a></li>		
+                    <li class="mobile-menu__item"><a href="dostavka.html" class="mobile-menu__item__link">Доставка</a></li>
+                    <li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__item__link">Контакты</a></li>
+                </ul>						
+            </div>
         </div>
     </header>
 
@@ -88,6 +103,16 @@
     </section>
     <section class="popular">
         <div class="popular-item-container">
+            <div class="sl_ctr">
+                <div class="sldr">  
+                    <img src="img/plate_1.png" alt="">
+                    <img src="img/plate_2.png" alt="">
+                    <img src="img/plate_3.png" alt="">
+                    <img src="img/plate_4.png" alt="">
+                </div>
+                <div class="prv_b"></div>
+                <div class="nxt_b"></div>
+            </div>
             <h1 class="popular-item-heading">Ройкроу</h1>
             <p class="popular-item-price">Цена: 6190 руб.</p>
             <p class="popular-item-description">Два уютных гамака станут прекрасным местом для ваших пушистых друзей. 
@@ -118,17 +143,27 @@
                     Ширина 460 мм                    
                 </li>
             </ul>
-            <a href="#" class="btn-popular-item">Купить</a>
+            <a href="#" class="btn btn-popular-item">Купить</a>
         </div>
         <div class="popular-item-container">
+            <div class="sl_ctr">
+                <div class="sldr">  
+                    <img src="img/plate_1.png" alt="">
+                    <img src="img/plate_2.png" alt="">
+                    <img src="img/plate_3.png" alt="">
+                    <img src="img/plate_4.png" alt="">
+                </div>
+                <div class="prv_b"></div>
+                <div class="nxt_b"></div>
+            </div>
             <h1 class="popular-item-heading">Дюфлеон</h1>
             <p class="popular-item-price">Цена: 6390 руб.</p>
-            <p class="popular-item-description">Этот уютный домик станет любимым местом для отдыха вашего пушитсого питомца. 
+            <p class="popular-item-description">Этот уютный домик станет любимым местом для отдыха вашего пушистого питомца. 
                 Его стиль отлично подойдет для любого интерьера. 
                 Изготовлен из качественной березовой фанеры с безопасной окраской.
             </p>
-            <h3 class="popular-item-heading">В комплект модели входит:</h2>
             <ul class="popular-item-complectation-list">
+                В комплект модели входит:
                 <li class="popular-item-complectation-list-item">
                     Полотно вокруг домика
                 </li>
@@ -142,8 +177,8 @@
                     Каркас с уникальным дизайном
                 </li>
             </ul>
-            <h3 class="popular-item-heading">Размеры:</h3>
             <ul class="popular-item-character-list">
+                Размеры:
                 <li class="popular-item-character-list-item">
                     Высота: 510 мм
                 </li>
@@ -154,7 +189,7 @@
                     Ширина 500 мм                    
                 </li>
             </ul>
-            <a href="#" class="btn-popular-item">Купить</a>
+            <a href="#" class="btn btn-popular-item">Купить</a>
         </div>
     </section>
     <footer class="footer">
