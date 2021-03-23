@@ -178,6 +178,11 @@ body {
     border-radius: 12px;
 }
 
+.advantage-list-item:hover {
+    filter: blur(1px);
+    
+}
+
 .btn-advantage-list-item {
     width: 100px;
     height: 50px;
@@ -538,7 +543,36 @@ body {
 
 
 /* contacts.html */
-
+.contacts-info {
+    text-align: center;
+}
+.contacts-info-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.contacts__heading {
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contacts-info-list-item {
+    margin-bottom: 50px;
+}
+.contacts-list-heading {
+    margin-bottom: 15px;
+}
+.contacts-number {
+    font-size: 28px;
+    color: #606061;
+}
+.contacts-e-mail {
+    font-size: 28px;
+    color: #606061;
+}
+/*
 .contacts {
     
     margin-left: auto;
@@ -573,6 +607,7 @@ body {
     margin: 0;
     padding-bottom: 15px;
 }
+*/
 
 /* dostavka.html */
 
@@ -650,10 +685,18 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 480px){
+    .advantage-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .advantage-list-item {
+        margin-left: 0;
+    }
     .header-container-menu-list {
         display: none;
     }
     .product-menu-list {
+        margin-top: 50px;
         justify-content: center;
     }
 
@@ -683,7 +726,7 @@ body {
         display: none;
     }
     .about-products-container {
-        margin-top: 25px;
+        margin-top: 50px;
         padding-left: 35px;
         padding-right: 35px;
     }
@@ -693,6 +736,61 @@ body {
         background-position: 35px center;
         background-size: 30%;
         background-repeat: no-repeat;
+    }
+    .delivery-and-payment {
+        display: none;
+    }
+    .delivery-and-payment-list {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;   
+    }
+    .page-heading {
+        text-align: center;
+    }
+    .delivery-list {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 110px;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+        background-color: #f5f5f5;
+        border-radius: 12px;
+        background-image: url(../svg/delivery-logo.svg);
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-size: 100px 100px;
+    }
+    .payment-list {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 130px;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+        background-color: #f5f5f5;
+        border-radius: 12px;
+        background-image: url(../svg/payment-logo.svg);
+        background-repeat: no-repeat;
+        background-position: center 10px;
+        background-size: 100px 100px;
+    }
+    .uptime-list {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 110px;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+        background-color: #f5f5f5;
+        border-radius: 12px;
+        background-image: url(../svg/uptime-logo.svg);
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-size: 100px 100px;
     }
     
 }
