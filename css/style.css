@@ -690,6 +690,10 @@ body {
     line-height: 1.5;
 }
 
+.delivery-and-payment-for320px {
+    display: none;
+}
+
 /* Modal window */
 .modalDialog {
     position: fixed;
@@ -800,6 +804,9 @@ body {
     }
     .delivery-and-payment {
         display: none;
+    }
+    .delivery-and-payment-for320px {
+        display: block;
     }
     .delivery-and-payment-list {
         width: 90%;
