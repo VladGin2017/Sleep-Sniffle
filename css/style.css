@@ -644,14 +644,13 @@ body {
 }
 
 .modalDialog > div {
-    
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     overflow-y:hidden;
     position: fixed;
-    background: #fff;
+    background: #ffffff;
 }
 
 .close {
@@ -664,7 +663,33 @@ body {
     width: 24px;
     text-decoration: none;
     font-weight: bold;
-    
+}
+
+/* Inputs */
+.input-field {
+    height: 40px;
+    width: 200px;
+    padding-left: 15px;
+    border: 1px solid #6fbff7;
+    border-radius: 12px;
+    outline: none;
+    color: #a2a2a2;
+}
+
+.buyer-btn-input {
+    height: 40px;
+    width: 120px;
+    border: 1px solid #6fbff7;
+    color: #6fbff7;
+    background-color: #ffffff;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+}
+
+.buyer-btn-input:hover {
+    background-color: #6fbff7;
+    color: #ffffff;
 }
 
 /* Media query */
