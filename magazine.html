@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/slider.js"></script>
     <script src="js/menu-slider.js"></script>
+    
     <title>Магазин</title>
 
 </head>
@@ -47,13 +47,88 @@
     </header>
 
     <section class="product-menu">
+        
+        
         <div class="container product-menu-container">
+
             <ul class="product-menu-list">
                 <li class="product-menu-list-item">
                     <img src="img/plate_2.png" alt="раздел1" class="product-menu-list-item-img">
                     <h2 class="product-menu-list-item-heading">Ройкроу</h2>
                     <p class="price">Цена: 6190 руб.</p>
-                    <a href="" class="btn btn-product">Подробнее</a>
+                    <button class="myBtn btn btn-product">Подробнее</button>
+                    <div class="modalwindow-product">
+                        <div class="modalwindow-product__content">
+                                <span class="close"></span>
+                                <h1 class="modalwindow-product__heading">Ройкроу</h1>
+                                <p class="modalwindow-product__price">Цена: 6190 руб.</p>
+                                <p class="modalwindow-product__description">Два уютных гамака станут прекрасным местом для ваших пушистых друзей. 
+                                    Геометрически круглая форма привлекает внимание и интригует. 
+                                    Сдержанная цветовая гамма позволяет использовать в любом интерьере - отличное решение для гостинной.
+                                </p>
+                                <ul class="list-complectation">
+                                    В комплект модели входит:
+                                    <li class="item-complectation">
+                                        Два мягких гамака
+                                    </li>
+                                    <li class="item-complectation">
+                                        Инструкция по сборке
+                                    </li>
+                                    <li class="item-complectation">
+                                        Каркас с уникальным дизайном
+                                    </li>
+                                </ul>
+                                <ul class="list-character">
+                                    Размеры:
+                                    <li class="item-character">
+                                        Высота: 560 мм
+                                    </li>
+                                    <li class="item-character">
+                                        Длина: 560 мм
+                                    </li>
+                                    <li class="item-character">
+                                        Ширина 460 мм                    
+                                    </li>
+                                </ul>
+                                <button class="myBtn_ btn ">Купить</button>
+                                <div class="fos">
+                                    <div class="order__content">
+                                        <form action="#" class="#">
+                                            <input value="Ройкроу" style="display: none;">
+                                            <p>Введите ваше имя:</p>
+                                            <input type="text" class="order-field">
+                                            <p>Введите ваш телефон:</p>
+                                            <input type="text" class="order-field">
+                                            <p>Комментарий:</p>
+                                            <input type="text" class="order-field">
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                var modal = document.getElementsByClassName("modalwindow-product")[0];
+                                var btn = document.getElementsByClassName("myBtn")[0];
+                                var span = document.getElementsByClassName("close")[0];
+                                var buy_container = document.getElementsByClassName("fos")[0];
+                                var buy_btn = document.getElementsByClassName("myBtn_")[0];
+                                btn.onclick = function() {
+                                    modal.style.display = "block";
+                                }
+                                span.onclick = function() {
+                                    modal.style.display = "none";
+                                }
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                                buy_btn.onclick = function() {
+                                    buy_container.style.display = "block";
+                                    
+                                }
+                                
+                                </script>
+                    </div>
                 </li>
                 <li class="product-menu-list-item">
                     <img src="img/plate_6.png" alt="раздел1" class="product-menu-list-item-img">
@@ -136,5 +211,6 @@
             </nav>
         </div> 
     </footer>
+    
 </body>
 </html>
