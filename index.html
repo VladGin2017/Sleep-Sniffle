@@ -67,34 +67,28 @@
         <div class="container advantage-container">
             <ul class="advantage-list">
                 <li class="advantage-list-item plate_1">
-                    <!--<img src="img/plate_1.png" alt="раздел1" class="product-menu-list-item-img"> -->
                     <h2 class="advantage-list-item-heading">Крепкий, долговечный, экологичный</h2>
                     <p class="advantage-description">Наши модели прослужат Вам не один год</p>
                     <a href="#" class="btn-advantage-list-item">Подробнее</a>
                 </li>
                 
                 <li class="advantage-list-item plate_2">
-                    <!--<img src="img/plate_2.jpg" alt="раздел1" class="advantage-list-item-img"> -->
                     <h2 class="advantage-list-item-heading">Уникальный дизайн</h2>
                     <p class="advantage-description">Такой дом Вы точно не купите в магазине</p>
                 </li>
                 <li class="advantage-list-item plate_3">
-                    <!--<img src="img/plate_3.jpg" alt="раздел1" class="advantage-item-img"> -->
                     <h2 class="advantage-list-item-heading">Подойдет к любому интерьеру</h2>
                     <p class="advantage-description">Минималистичная цветовая палитра позволяет это сделать</p>
                 </li>
                 <li class="advantage-list-item plate_4">
-                    <!--<img src="img/plate_4.png" alt="раздел1" class="advantage-list-item-img"> -->
                     <h2 class="advantage-list-item-heading">Конструктор для взрослых</h2>
                     <p class="advantage-description">Легко собрать и разобрать, переезд определенно не станет проблемой</p>
                 </li>
                 <li class="advantage-list-item plate_5">
-                    <!--<img src="img/plate_5.jpg" alt="раздел1" class="advantage-list-item-img"> -->
                     <h2 class="advantage-list-item-heading">Адаптивный текстиль</h2>
                     <p class="advantage-description">Меняйте внешний вид моделей под свое настроение</p>
                 </li>
                 <li class="advantage-list-item plate_6">
-                    <!--<img src="img/plate_6.jpg" alt="раздел1" class="advantage-list-item-img"> -->
                     <h2 class="advantage-list-item-heading">Комфортное место для питомца</h2>
                     <p class="advantage-description">Любому четвероногому надо иногда уединиться и отдохнуть от любви и тисканья хозяина</p>
                 </li>
@@ -113,9 +107,9 @@
                 <div class="prv_b"></div>
                 <div class="nxt_b"></div>
             </div>
-            <h1 class="popular-item-heading">Ройкроу</h1>
-            <p class="popular-item-price">Цена: 6190 руб.</p>
-            <p class="popular-item-description">Два уютных гамака станут прекрасным местом для ваших пушистых друзей. 
+            <h1 class="popular-item-heading product-heading">Ройкроу</h1>
+            <p class="popular-item-price product-price">Цена: 6190 руб.</p>
+            <p class="popular-item-description product-description">Два уютных гамака станут прекрасным местом для ваших пушистых друзей. 
                 Геометрически круглая форма привлекает внимание и интригует. 
                 Сдержанная цветовая гамма позволяет использовать в любом интерьере - отличное решение для гостинной.
             </p>
@@ -143,7 +137,7 @@
                     Ширина 460 мм                    
                 </li>
             </ul>
-            <a href="#" class="btn btn-popular-item">Купить</a>
+            <button class="buy-popular btn btn-popular-item">Купить</button>
         </div>
         <div class="popular-item-container">
             <div class="sl_ctr">
@@ -189,7 +183,24 @@
                     Ширина 500 мм                    
                 </li>
             </ul>
-            <a href="#" class="btn btn-popular-item">Купить</a>
+            <button class="buy-popular btn btn-popular-item">Купить</button>
+        </div>
+        <div class="fos">
+            <div class="order__content">
+                <span class="close_"></span>
+                <h1 class="callback-heading">Обратный звонок</h1>
+                <p class="callback-description">После отправки заявки менеджер Вам перезвонит в ближайшее время, чтобы узнать детали заказа.</p>
+                <form action="#" method="POST" class="callback-form">
+                    <input value="Ройкроу" style="display: none;">
+                    <input type="text" class="order-field" placeholder="ФИО" required name="fullname-buyer">
+                    <input type="text" class="order-field" placeholder="Контактный номер" required name="phone-buyer">
+                    <input type="text" class="order-field" placeholder="Кличка питомца" required name="pet-nickname">
+                    <textarea name="comment" cols="35" rows="5" class="order-field__text" placeholder="Коммантарий (необязательно)"></textarea>
+                    <input type="checkbox" required class="check-data">Данные верны
+                    <input type="submit" class="subm-btn btn" value="Отправить">
+                </form>
+
+            </div>
         </div>
     </section>
 
@@ -253,5 +264,28 @@
             </nav>
         </div> 
     </footer>
+    <!-- Modal window FOS -->
+    <script>
+        var buy_container = document.querySelectorAll(".fos");
+        var buy_btn = document.querySelectorAll(".buy-popular");
+        var cross_exit = document.querySelectorAll(".close_");
+            for (var i=0; i < buy_btn.length; i++) {
+                buy_btn[i].addEventListener("click", function(event) {
+                    event.preventDefault();
+                    buy_container[0].style.display = "block";
+                });
+                cross_exit[i].addEventListener("click", function(event) {
+                    event.preventDefault();
+                    buy_container[0].style.display = "none";
+                });
+                window.onclick = function(event) {
+                                    if (event.target == buy_container[0]) {
+                                        buy_container[0].style.display = "none";
+                                    } 
+                                }
+            };
+    </script>
+    <!---------------------->
+   
 </body>
 </html>
