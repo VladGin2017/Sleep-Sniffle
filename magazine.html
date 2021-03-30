@@ -98,10 +98,10 @@
                     <img src="img/plate_6.png" alt="раздел1" class="product-menu-list-item-img">
                     <h2 class="product-menu-list-item-heading">Дюфлеон</h2>
                     <p class="price">Цена: 6390 руб.</p>
-                    <button class="myBtn btn btn-product">Подробнее</button>
-                    <div class="modalwindow-product">
+                    <button class="dufl-btn btn btn-product">Подробнее</button>
+                    <div class="dufl-modal">
                         <div class="modalwindow-product__content">
-                                <span class="close"></span>
+                                <span class="dufl-close"></span>
                                 <h1 class="modalwindow-product__heading">Дюфлеон</h1>
                                 <p class="modalwindow-product__price">Цена: 6190 руб.</p>
                                 <p class="modalwindow-product__description">Два уютных гамака станут прекрасным местом для ваших пушистых друзей. 
@@ -140,13 +140,85 @@
                     <img src="img/plate_1.png" alt="раздел1" class="product-menu-list-item-img">
                     <h2 class="product-menu-list-item-heading">Грегменд</h2>
                     <p class="price">Цена: 6890 руб.</p>
-                    <a href="" class="btn btn-product">Подробнее</a>
+                    <button class="greg-btn btn btn-product">Подробнее</button>
+                    <div class="greg-modal">
+                        <div class="modalwindow-product__content">
+                                <span class="greg-close"></span>
+                                <h1 class="modalwindow-product__heading">Грегменд</h1>
+                                <p class="modalwindow-product__price">Цена: 6190 руб.</p>
+                                <p class="modalwindow-product__description">Два уютных гамака станут прекрасным местом для ваших пушистых друзей. 
+                                    Геометрически круглая форма привлекает внимание и интригует. 
+                                    Сдержанная цветовая гамма позволяет использовать в любом интерьере - отличное решение для гостинной.
+                                </p>
+                                <ul class="list-complectation">
+                                    В комплект модели входит:
+                                    <li class="item-complectation">
+                                        Два мягких гамака
+                                    </li>
+                                    <li class="item-complectation">
+                                        Инструкция по сборке
+                                    </li>
+                                    <li class="item-complectation">
+                                        Каркас с уникальным дизайном
+                                    </li>
+                                </ul>
+                                <ul class="list-character">
+                                    Размеры:
+                                    <li class="item-character">
+                                        Высота: 560 мм
+                                    </li>
+                                    <li class="item-character">
+                                        Длина: 560 мм
+                                    </li>
+                                    <li class="item-character">
+                                        Ширина 460 мм                    
+                                    </li>
+                                </ul>
+                                <button class="myBtn_ btn ">Купить</button>
+                            </div>   
+                    </div>
                 </li>
                 <li class="product-menu-list-item">
                     <img src="img/plate_5.png" alt="раздел1" class="product-menu-list-item-img">
                     <h2 class="product-menu-list-item-heading">Подушка</h2>
                     <p class="price">Цена: 990 руб.</p>
-                    <a href="" class="btn btn-product">Подробнее</a>
+                    <button class="pilw-btn btn btn-product">Подробнее</button>
+                    <div class="pilw-modal">
+                        <div class="modalwindow-product__content">
+                                <span class="pilw-close"></span>
+                                <h1 class="modalwindow-product__heading">Подушка</h1>
+                                <p class="modalwindow-product__price">Цена: 6190 руб.</p>
+                                <p class="modalwindow-product__description">Два уютных гамака станут прекрасным местом для ваших пушистых друзей. 
+                                    Геометрически круглая форма привлекает внимание и интригует. 
+                                    Сдержанная цветовая гамма позволяет использовать в любом интерьере - отличное решение для гостинной.
+                                </p>
+                                <ul class="list-complectation">
+                                    В комплект модели входит:
+                                    <li class="item-complectation">
+                                        Два мягких гамака
+                                    </li>
+                                    <li class="item-complectation">
+                                        Инструкция по сборке
+                                    </li>
+                                    <li class="item-complectation">
+                                        Каркас с уникальным дизайном
+                                    </li>
+                                </ul>
+                                <ul class="list-character">
+                                    Размеры:
+                                    <li class="item-character">
+                                        Высота: 560 мм
+                                    </li>
+                                    <li class="item-character">
+                                        Длина: 560 мм
+                                    </li>
+                                    <li class="item-character">
+                                        Ширина 460 мм                    
+                                    </li>
+                                </ul>
+                                <button class="myBtn_ btn ">Купить</button>
+                            </div>   
+                    </div>
                 </li>
             </ul>
         </div>
@@ -232,47 +304,75 @@
     <!-------------------------->
     <!-- Modal window FOS -->
     <script>
-        var product_modal = document.querySelectorAll(".modalwindow-product");
-        var btn = document.querySelectorAll(".myBtn");
+        /****************************/
+        var pilw_modal = document.getElementsByClassName("pilw-modal")[0];
+        var pilw_btn = document.getElementsByClassName("pilw-btn")[0];
+        var pilw_close = document.getElementsByClassName("pilw-close")[0];
+        pilw_btn.onclick = function() {
+                    pilw_modal.style.display = "block";
+                }
+
+                pilw_close.onclick = function() {
+                    pilw_modal.style.display = "none";
+                }
+        /****************************/
+
+        /****************************/
+        var greg_modal = document.getElementsByClassName("greg-modal")[0];
+        var greg_btn = document.getElementsByClassName("greg-btn")[0];
+        var greg_close = document.getElementsByClassName("greg-close")[0];
+        greg_btn.onclick = function() {
+                    greg_modal.style.display = "block";
+                }
+
+                greg_close.onclick = function() {
+                    greg_modal.style.display = "none";
+                }
+        /****************************/
+
+        /****************************/
+        var dufl_modal = document.getElementsByClassName("dufl-modal")[0];
+        var dufl_btn = document.getElementsByClassName("dufl-btn")[0];
+        var dufl_close = document.getElementsByClassName("dufl-close")[0];
+        dufl_btn.onclick = function() {
+                    dufl_modal.style.display = "block";
+                }
+
+                dufl_close.onclick = function() {
+                    dufl_modal.style.display = "none";
+                }
+        /****************************/
+        var product_modal = document.getElementsByClassName("modalwindow-product")[0];
+        var btn = document.getElementsByClassName("myBtn")[0];
+        var cross_exit = document.getElementsByClassName("close")[0];
         var buy_container = document.querySelectorAll(".fos");
         var buy_btn = document.querySelectorAll(".myBtn_");
-        var cross_exit = document.querySelectorAll(".close");
         var cross_exit_ = document.querySelectorAll(".close_");
-            /*for (var i=0; i == btn.length; i++) */ 
-            i=0;
-            while (i < btn.length) {
-                btn[i].addEventListener("click", function(event) {
-                    event.preventDefault();
-                    product_modal[i].style.display = "block";
-                    console.log (btn.length);
-                });
+        
+                btn.onclick = function() {
+                    product_modal.style.display = "block";
+                }
 
-                cross_exit[i].addEventListener("click", function(event) {
-                    event.preventDefault();
-                    product_modal[i].style.display = "none";
-                });
-                i++;
-            }
+                cross_exit.onclick = function() {
+                    product_modal.style.display = "none";
+                }
+            
             for (var i=0; i < buy_btn.length; i++) {
                 buy_btn[i].addEventListener("click", function(event) {
                     event.preventDefault();
                     buy_container[0].style.display = "block";
                 });
-                cross_exit_[i].addEventListener("click", function(event) {
+                cross_exit_[0].addEventListener("click", function(event) {
                     event.preventDefault();
                     buy_container[0].style.display = "none";
                 });
                 window.onclick = function(event) {
                                     if (event.target == buy_container[0]) {
                                         buy_container[0].style.display = "none";
-                                    } else if (event.target == product_modal[0]) {
-                                        product_modal[0].style.display = "none";
-                                    }
+                                    } 
                                 }
             };
     </script>
     <!---------------------->
-    
-    
 </body>
 </html>
