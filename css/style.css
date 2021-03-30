@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'source_sans';
-    font-weight: 400;
-    font-display: swap;
-    font-style: normal;
-    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
-         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
-
-}
-
-
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +25,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'source_sans', sans-serif;
+    font-family: sans-serif;
     background-color: white;
 }
 
@@ -929,10 +918,10 @@ body {
   
   
 .modalwindow-product__content {
-    top: 30px;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;  
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    left: 0;
     position: absolute;
     background-color: #ffffff;
 }
@@ -974,27 +963,27 @@ body {
 .modalwindow-product__heading {
     margin: 0;
    
-    margin-left: 100px;
+    margin-left: 50px;
     padding-bottom: 25px;
 }
 .modalwindow-product__price {
-    margin-left: 100px;
+    margin-left: 50px;
     padding-bottom: 25px;
 
 }
 .modalwindow-product__description {
-    margin-left: 100px;
-    max-width: 600px;
+    margin-left: 50px;
+    max-width: 500px;
     padding-bottom: 25px;
 }
 .list-complectation {
-    margin-left: 100px;
+    margin-left: 50px;
     list-style: outside;
     padding-bottom: 25px;
 }
 
 .list-character {
-    margin-left: 100px;
+    margin-left: 50px;
     list-style: outside;
     padding-bottom: 25px;
 }
@@ -1009,9 +998,15 @@ body {
 
 .myBtn_ {
     width: 150px;
-    margin-left: 100px;
+    margin-left: 50px;
     outline: none;
     cursor: pointer;
+}
+.slider-container-product {
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    margin-left: 550px;
 }
 
 /* FOS */
@@ -1137,3 +1132,4 @@ input:focus::-webkit-input-placeholder {
     cursor: pointer;
     transform: scale(1.1);
 }
+
