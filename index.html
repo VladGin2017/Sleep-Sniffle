@@ -96,16 +96,26 @@
     </section>
     <section class="popular">
         <div class="popular-item-container">
-            <div class="sl_ctr">
-                <div class="sldr">  
-                    <img src="img/plate_1.png" alt="">
-                    <img src="img/plate_2.png" alt="">
-                    <img src="img/plate_3.png" alt="">
-                    <img src="img/plate_4.png" alt="">
+            <div class="slider">
+                <div class="slider__wrapper">
+                  <div class="slider__items">
+                    <div class="slider__item">
+                      <img src="img/plate_1.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                      <img src="img/plate_2.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                      <img src="img/plate_3.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                      <img src="img/plate_4.png" alt="">
+                    </div>
+                  </div>
                 </div>
-                <div class="prv_b"></div>
-                <div class="nxt_b"></div>
-            </div>
+                <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                <a class="slider__control slider__control_next" href="#" role="button"></a>
+              </div>
             <h1 class="popular-item-heading product-heading">Ройкроу</h1>
             <p class="popular-item-price product-price">Цена: 6190 руб.</p>
             <p class="popular-item-description product-description">Два уютных гамака станут прекрасным местом для ваших пушистых друзей. 
@@ -139,16 +149,26 @@
             <button class="buy-popular btn btn-popular-item">Купить</button>
         </div>
         <div class="popular-item-container">
-            <div class="sl_ctr">
-                <div class="sldr">  
-                    <img src="img/plate_1.png" alt="">
-                    <img src="img/plate_2.png" alt="">
-                    <img src="img/plate_3.png" alt="">
-                    <img src="img/plate_4.png" alt="">
+            <div class="slider1">
+                <div class="slider__wrapper">
+                  <div class="slider__items">
+                    <div class="slider__item">
+                      <img src="img/plate_1.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                      <img src="img/plate_2.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                      <img src="img/plate_3.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                      <img src="img/plate_4.png" alt="">
+                    </div>
+                  </div>
                 </div>
-                <div class="prv_b"></div>
-                <div class="nxt_b"></div>
-            </div>
+                <a class="slider__control slider__control_prev" href="#" role="button"></a>
+                <a class="slider__control slider__control_next" href="#" role="button"></a>
+              </div>
             <h1 class="popular-item-heading">Дюфлеон</h1>
             <p class="popular-item-price">Цена: 6390 руб.</p>
             <p class="popular-item-description">Этот уютный домик станет любимым местом для отдыха вашего пушистого питомца. 
@@ -284,6 +304,16 @@
                                 }
             };
     </script>
+    <script>
+        slideShow('.slider', {
+                isAutoplay: true
+            });
+            slideShow('.slider1', {
+                isAutoplay: true
+            });
+            
+    </script>
+   
     <!---------------------->
    
 </body>
